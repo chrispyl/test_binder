@@ -7,3 +7,6 @@ tar -xzf spark-3.1.2-bin-hadoop3.2.tgz
 rm spark-3.1.2-bin-hadoop3.2.tgz
 
 SPARK_HOME=$HOME/spark-3.1.2-bin-hadoop3.2
+
+#Jupyter server proxy
+jupyter serverextension enable --sys-prefix jupyter_server_proxy
