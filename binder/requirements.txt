@@ -3,3 +3,5 @@ numpy
 pandas
 
 pyspark
+
+jupyter-server-proxy
