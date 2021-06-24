@@ -1,0 +1,11 @@
+Port 2222
+UsePrivilegeSeparation no
+HostKey /home/jovyan/.ssh/ssh_host_rsa_key
+UsePAM no
+PidFile /home/jovyan/.ssh/sshd.pid
+
+X11Forwarding yes
+PrintMotd no
+ChallengeResponseAuthentication no
+AcceptEnv LANG LC_*
+Subsystem	sftp	/usr/lib/openssh/sftp-server
