@@ -1,0 +1,9 @@
+#!/bin/bash
+
+wget https://apache.mirror.wearetriple.com/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
+tar -xzf spark-3.1.2-bin-hadoop3.2.tgz
+
+#Tidy up
+rm spark-3.1.2-bin-hadoop3.2.tgz
+
+SPARK_HOME=$HOME/spark-3.1.2-bin-hadoop3.2
