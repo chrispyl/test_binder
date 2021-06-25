@@ -13,7 +13,7 @@ jupyter serverextension enable --sys-prefix jupyter_server_proxy
 #jupyter labextension install jupyterlab_spark
 
 pip install nodejs
-jupyter labextension install /home/jovyan/jupyterlab-spark-ui-tab
-jupyter serverextension install --py /home/jovyan/jupyterlab-spark-ui-tab/spark-ui-tab
+jupyter labextension install jupyterlab-spark-ui-tab
+jupyter serverextension install --py jupyterlab-spark-ui-tab/spark-ui-tab
 jupyter lab build
 
