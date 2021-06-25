@@ -9,6 +9,6 @@ rm spark-3.1.2-bin-hadoop3.2.tgz
 SPARK_HOME=$HOME/spark-3.1.2-bin-hadoop3.2
 
 #Jupyter server proxy
-#jupyter serverextension enable --sys-prefix jupyter_server_proxy
-jupyter labextension install jupyterlab_spark
+jupyter serverextension enable --sys-prefix jupyter_server_proxy
+#jupyter labextension install jupyterlab_spark
 
