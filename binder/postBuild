@@ -17,8 +17,9 @@ ls
 npm config set strict-ssl false
 cd jupyterlab-spark-ui-tab
 npm install
-jupyter labextension install jupyterlab-spark-ui-tab
-jupyter serverextension install --py jupyterlab-spark-ui-tab/spark-ui-tab
-jupyter lab build
+#jupyter labextension install jupyterlab-spark-ui-tab
+#jupyter serverextension install --py jupyterlab-spark-ui-tab/spark-ui-tab
 jupyter labextension link .
-
+#cd spark-ui-tab
+#jupyter serverextension link .
+jupyter lab build
