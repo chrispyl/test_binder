@@ -1,2 +1,4 @@
 openjdk-11-jre-headless
-openssh-server
+
+nodejs
+npm
