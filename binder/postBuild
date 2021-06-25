@@ -12,6 +12,6 @@ SPARK_HOME=$HOME/spark-3.1.2-bin-hadoop3.2
 jupyter serverextension enable --sys-prefix jupyter_server_proxy
 #jupyter labextension install jupyterlab_spark
 
-pip install nodejs
-jupyter labextension install jupyterlab-spark-ui-tab
-jupyter lab build
+#pip install nodejs
+#jupyter labextension install jupyterlab-spark-ui-tab
+#jupyter lab build
