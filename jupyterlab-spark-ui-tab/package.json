@@ -1,0 +1,44 @@
+{
+  "name": "@liorbaber/jupyterlab-spark-ui-tab",
+  "version": "0.0.8",
+  "description": "jupyterlab extension to have spark-ui avi;able as a tab",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/Liorba/spark-ui-tab/",
+  "bugs": {
+    "url": "https://github.com/Liorba/spark-ui-tab/issues"
+  },
+  "license": "apache-2.0",
+  "author": "lior baber",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Liorba/jupyterlab-spark-ui-tab"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^0.19.1",
+    "@jupyterlab/apputils": "^0.19.1",
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "~3.1.1"
+  },
+  "jupyterlab": {
+    "extension": true
+  }
+}
