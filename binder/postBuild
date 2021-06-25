@@ -14,7 +14,11 @@ SPARK_HOME=$HOME/spark-3.1.2-bin-hadoop3.2
 
 pwd
 ls
+npm config set strict-ssl false
+cd jupyterlab-spark-ui-tab
+npm install
 jupyter labextension install jupyterlab-spark-ui-tab
 jupyter serverextension install --py jupyterlab-spark-ui-tab/spark-ui-tab
 jupyter lab build
+jupyter labextension link .
 
