@@ -14,5 +14,6 @@ jupyter serverextension enable --sys-prefix jupyter_server_proxy
 
 pip install nodejs
 jupyter labextension install jupyterlab-spark-ui-tab
+jupyter serverextension install --py spark-ui-tab
 jupyter lab build
 
