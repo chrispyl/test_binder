@@ -16,7 +16,7 @@ pwd
 ls
 #npm config set strict-ssl false
 npm install -g typescript@latest
-pip install --upgrade setuptools pip
+#pip install --upgrade setuptools pip
 cd jupyterlab-spark-ui-tab
 #pip install .
 npm install
