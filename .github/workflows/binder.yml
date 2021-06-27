@@ -1,4 +1,4 @@
-name: Binder_action
+name: Cache build to mybinder.org
 on: [push]
 jobs:
   Create-MyBinderOrg-Cache:
