@@ -8,5 +8,3 @@ mv /home/jovyan/binder_content/datasets /home/jovyan/binder_content/notebooks /h
 rm -rf binder_content
 
 exec "$@"
-
-cd notebooks
