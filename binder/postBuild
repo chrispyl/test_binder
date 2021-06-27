@@ -22,10 +22,10 @@ yes | conda install -c conda-forge jupyterlab=2.1.2
 #npm config set strict-ssl false
 ##npm install -g typescript@latest
 
-yes | pip install jupyterlab-spark-ui-tab
-yes | jupyter labextension install @acmore/jupyterlab-spark-ui-tab
-yes | jupyter serverextension enable --py --sys-prefix spark-ui-tab
-yes | jupyter lab build
+pip install jupyterlab-spark-ui-tab
+jupyter labextension install @acmore/jupyterlab-spark-ui-tab
+jupyter serverextension enable --py --sys-prefix spark-ui-tab
+jupyter lab build
 #pip install --upgrade setuptools pip
 ##cd jupyterlab-spark-ui-tab
 #pip install .

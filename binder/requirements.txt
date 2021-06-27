@@ -1,6 +1,7 @@
 pip
 numpy
 pandas
+psutil
 
 pyspark
 
