@@ -30,4 +30,4 @@ jupyter serverextension enable --py --sys-prefix spark-ui-tab
 
 git clone https://github.com/chrispyl/binder_content.git
 mv /home/jovyan/binder_content/datasets /home/jovyan/binder_content/notebooks /home/jovyan/
-rm -rf binder content
+rm -rf binder_content
