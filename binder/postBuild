@@ -11,3 +11,7 @@ echo "y" | conda install -c conda-forge jupyterlab=2.1.2
 pip install jupyterlab-spark-ui-tab
 jupyter labextension install @acmore/jupyterlab-spark-ui-tab
 jupyter serverextension enable --py --sys-prefix spark-ui-tab
+
+git clone https://github.com/chrispyl/binder_content.git
+mv /home/jovyan/binder_content/datasets /home/jovyan/binder_content/notebooks /home/jovyan/
+rm -rf binder_content
