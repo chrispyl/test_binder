@@ -1,0 +1,2 @@
+- name: repo2docker Action
+  uses: jupyterhub/repo2docker-action@0.2
