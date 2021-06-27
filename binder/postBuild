@@ -14,15 +14,23 @@ SPARK_HOME=$HOME/spark-3.1.2-bin-hadoop3.2
 
 pwd
 ls
+conda install -c conda-forge jupyterlab=2.1.2
+npm i @jupyterlab/application@2.1.1
+npm i @jupyterlab/apputils@2.1.1
+npm i axios@0.18.0
 #npm config set strict-ssl false
-npm install -g typescript@latest
+##npm install -g typescript@latest
+
+pip install jupyterlab-spark-ui-tab
+jupyter labextension install @acmore/jupyterlab-spark-ui-tab
+jupyter serverextension install --py spark-ui-tab
 #pip install --upgrade setuptools pip
-cd jupyterlab-spark-ui-tab
+##cd jupyterlab-spark-ui-tab
 #pip install .
-npm install
+##npm install
 #jupyter labextension install jupyterlab-spark-ui-tab
-jupyter serverextension enable --py spark-ui-tab
+##jupyter serverextension enable --py spark-ui-tab
 #jupyter labextension link .
 #cd spark-ui-tab
 #jupyter serverextension link .
-jupyter lab build
+##jupyter lab build
