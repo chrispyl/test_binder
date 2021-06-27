@@ -1,12 +1,11 @@
-name: Build Notebook Container
+name: Binder_action
 on: [push]
 jobs:
-  build:
+  Create-MyBinderOrg-Cache:
     runs-on: ubuntu-latest
     steps:
     - name: cache binder build on mybinder.org
-      uses: jupyterhub/repo2docker-action@0.2
+      uses: jupyterhub/repo2docker-action@main
       with:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        BINDER_CACHE: true
+        NO_PUSH: true
+        MYBINDERORG_TAG: ${{ github.event.ref }}
