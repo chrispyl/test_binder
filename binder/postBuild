@@ -5,28 +5,12 @@ tar -xzf spark-3.1.2-bin-hadoop3.2.tgz
 rm spark-3.1.2-bin-hadoop3.2.tgz
 
 SPARK_HOME=$HOME/spark-3.1.2-bin-hadoop3.2
+export PATH=$SPARK_HOME/bin:$PATH #this can be omitted
 
-yes | conda install -c conda-forge jupyterlab=2.1.2
+echo "y" | conda install -c conda-forge jupyterlab=2.1.2
 pip install jupyterlab-spark-ui-tab
 jupyter labextension install @acmore/jupyterlab-spark-ui-tab
 jupyter serverextension enable --py --sys-prefix spark-ui-tab
-#jupyter lab build
-
-#yes | npm i @jupyterlab/application@2.1.1
-#yes | npm i @jupyterlab/apputils@2.1.1
-#yes | npm i axios@0.18.0
-#npm config set strict-ssl false
-##npm install -g typescript@latest
-#pip install --upgrade setuptools pip
-##cd jupyterlab-spark-ui-tab
-#pip install .
-##npm install
-#jupyter labextension install jupyterlab-spark-ui-tab
-##jupyter serverextension enable --py spark-ui-tab
-#jupyter labextension link .
-#cd spark-ui-tab
-#jupyter serverextension link .
-##jupyter lab build
 
 git clone https://github.com/chrispyl/binder_content.git
 mv /home/jovyan/binder_content/datasets /home/jovyan/binder_content/notebooks /home/jovyan/
