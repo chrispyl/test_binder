@@ -2,30 +2,21 @@
 
 wget https://apache.mirror.wearetriple.com/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
 tar -xzf spark-3.1.2-bin-hadoop3.2.tgz
-
-#Tidy up
 rm spark-3.1.2-bin-hadoop3.2.tgz
 
 SPARK_HOME=$HOME/spark-3.1.2-bin-hadoop3.2
 
-#Jupyter server proxy
-#jupyter serverextension enable --sys-prefix jupyter_server_proxy
-#jupyter labextension install jupyterlab_spark
-
-pwd
-ls
-
 yes | conda install -c conda-forge jupyterlab=2.1.2
+pip install jupyterlab-spark-ui-tab
+jupyter labextension install @acmore/jupyterlab-spark-ui-tab
+jupyter serverextension enable --py --sys-prefix spark-ui-tab
+jupyter lab build
+
 #yes | npm i @jupyterlab/application@2.1.1
 #yes | npm i @jupyterlab/apputils@2.1.1
 #yes | npm i axios@0.18.0
 #npm config set strict-ssl false
 ##npm install -g typescript@latest
-
-pip install jupyterlab-spark-ui-tab
-jupyter labextension install @acmore/jupyterlab-spark-ui-tab
-jupyter serverextension enable --py --sys-prefix spark-ui-tab
-jupyter lab build
 #pip install --upgrade setuptools pip
 ##cd jupyterlab-spark-ui-tab
 #pip install .
