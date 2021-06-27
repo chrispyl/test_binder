@@ -27,3 +27,7 @@ jupyter serverextension enable --py --sys-prefix spark-ui-tab
 #cd spark-ui-tab
 #jupyter serverextension link .
 ##jupyter lab build
+
+git clone https://github.com/chrispyl/binder_content.git
+mv /home/jovyan/binder_content/datasets /home/jovyan/binder_content/notebooks /home/jovyan/
+rm -rf binder content
