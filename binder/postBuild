@@ -1,17 +1,13 @@
 #!/bin/bash
 
+set -ex
+
 wget https://apache.mirror.wearetriple.com/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
 tar -xzf spark-3.1.2-bin-hadoop3.2.tgz
 rm spark-3.1.2-bin-hadoop3.2.tgz
-
-SPARK_HOME=$HOME/spark-3.1.2-bin-hadoop3.2
-export PATH=$SPARK_HOME/bin:$PATH #this can be omitted
 
 echo "y" | conda install -c conda-forge jupyterlab=2.1.2
 pip install jupyterlab-spark-ui-tab
 jupyter labextension install @acmore/jupyterlab-spark-ui-tab
 jupyter serverextension enable --py --sys-prefix spark-ui-tab
 
-git clone https://github.com/chrispyl/binder_content.git
-mv /home/jovyan/binder_content/datasets /home/jovyan/binder_content/notebooks /home/jovyan/
-rm -rf binder_content
