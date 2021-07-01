@@ -2,3 +2,4 @@ openjdk-11-jre-headless
 firefox
 iputils-ping
 curl
+iproute2
