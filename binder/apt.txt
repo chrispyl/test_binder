@@ -3,3 +3,4 @@ firefox
 iputils-ping
 curl
 iproute2
+xorg-x11-xauth
