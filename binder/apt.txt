@@ -4,3 +4,4 @@ iputils-ping
 curl
 iproute2
 xorg
+xauth
