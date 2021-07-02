@@ -11,3 +11,4 @@ pip install jupyterlab-spark-ui-tab
 jupyter labextension install @acmore/jupyterlab-spark-ui-tab
 jupyter serverextension enable --py --sys-prefix spark-ui-tab
 
+apt-get purge firefox
