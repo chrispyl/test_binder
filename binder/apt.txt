@@ -6,3 +6,4 @@ iproute2
 xorg
 xauth
 openbox
+net-tools 
