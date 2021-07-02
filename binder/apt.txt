@@ -5,3 +5,4 @@ curl
 iproute2
 xorg
 xauth
+openbox
