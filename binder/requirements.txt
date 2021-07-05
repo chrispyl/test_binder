@@ -6,3 +6,4 @@ psutil
 pyspark
 
 jupyter-server-proxy
+jupyterlab_iframe>=0.2
