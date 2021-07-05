@@ -6,4 +6,4 @@ psutil
 pyspark
 
 jupyter-server-proxy
-jupyterlab
+ipywidgets
