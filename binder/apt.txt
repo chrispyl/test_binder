@@ -6,4 +6,3 @@ xorg
 xauth
 openbox
 net-tools 
-google-chrome-stable
