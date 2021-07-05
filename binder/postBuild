@@ -11,6 +11,9 @@ rm spark-3.1.2-bin-hadoop3.2.tgz
 #jupyter labextension install @acmore/jupyterlab-spark-ui-tab
 #jupyter serverextension enable --py --sys-prefix spark-ui-tab
 
-pip install jupyterlab_iframe
-jupyter labextension install jupyterlab_iframe
+jupyter labextension install jupyterlab_iframe@^0.2 --no-build
+jupyter lab build --dev-build=False --minimize=False
 jupyter serverextension enable --py jupyterlab_iframe
+
+mkdir -p ~/.jupyter
+echo -e $config > ~/.jupyter/jupyter_notebook_config.py
