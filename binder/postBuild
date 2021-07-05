@@ -10,8 +10,3 @@ yes | conda install -c conda-forge jupyterlab=2.1.2
 pip install jupyterlab-spark-ui-tab
 jupyter labextension install @acmore/jupyterlab-spark-ui-tab
 jupyter serverextension enable --py --sys-prefix spark-ui-tab
-
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
-echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list && \
-
-rm -rf /var/lib/apt/lists/*
