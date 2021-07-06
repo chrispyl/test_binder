@@ -8,3 +8,5 @@ pyspark
 jupyter-server-proxy
 jupyterlab==2.2.8
 jupyterlab_iframe>=0.2
+
+sparkmonitor
