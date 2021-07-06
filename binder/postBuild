@@ -21,6 +21,6 @@ rm spark-3.1.2-bin-hadoop3.2.tgz
 jupyter nbextension install sparkmonitor --py --user
 jupyter nbextension enable  sparkmonitor --py --user
 jupyter serverextension enable --py --user sparkmonitor # this should happen automatically
-jupyter lab build
+jupyter lab build --dev-build=False --minimize=False
 
 
