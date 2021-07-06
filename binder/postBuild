@@ -18,8 +18,8 @@ jupyter serverextension enable --py jupyterlab_iframe
 mkdir -p ~/.jupyter
 echo -e $config > ~/.jupyter/jupyter_notebook_config.py
 
-jupyter nbextension install sparkmonitor --py
-jupyter nbextension enable  sparkmonitor --py
+jupyter nbextension install sparkmonitor --py --user
+jupyter nbextension enable  sparkmonitor --py --user
 jupyter serverextension enable --py --system sparkmonitor # this should happen automatically
 
 ipython profile create
