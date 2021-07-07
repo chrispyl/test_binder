@@ -18,6 +18,8 @@ rm spark-3.1.2-bin-hadoop3.2.tgz
 #mkdir -p ~/.jupyter
 #echo -e $config > ~/.jupyter/jupyter_notebook_config.py
 
+jupyter serverextension enable --sys-prefix sparkUIserverextension
+
 jupyter nbextension install sparkmonitor --py --user
 jupyter nbextension enable  sparkmonitor --py --user
 jupyter serverextension enable --py --user sparkmonitor # this should happen automatically
