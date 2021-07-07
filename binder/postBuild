@@ -22,7 +22,7 @@ jupyter serverextension enable --sys-prefix jupyter_server_proxy
 
 mv /home/jovyan/sparkUIserverextension.py ${NB_PYTHON_PREFIX}/lib/python*/site-packages/
 
-jupyter serverextension enable --sys-prefix tensorboardserverextension
+jupyter serverextension enable --sys-prefix sparkUIserverextension
 #jupyter labextension install jupyterlab-server-proxy
 #jupyter serverextension enable --sys-prefix /home/jovyan/sparkUIserverextension
 
