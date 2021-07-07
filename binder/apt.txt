@@ -1,8 +1,1 @@
 openjdk-11-jre-headless
-iputils-ping
-curl
-iproute2
-xorg
-xauth
-openbox
-net-tools 
