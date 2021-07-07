@@ -19,6 +19,10 @@ set -ex
 #echo -e $config > ~/.jupyter/jupyter_notebook_config.py
 
 jupyter serverextension enable --sys-prefix jupyter_server_proxy
+
+mv /home/jovyan/sparkUIserverextension.py ${NB_PYTHON_PREFIX}/lib/python*/site-packages/
+
+jupyter serverextension enable --sys-prefix tensorboardserverextension
 #jupyter labextension install jupyterlab-server-proxy
 #jupyter serverextension enable --sys-prefix /home/jovyan/sparkUIserverextension
 
