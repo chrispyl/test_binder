@@ -1,5 +1,4 @@
 from subprocess import Popen
 
 def load_jupyter_server_extension(nbapp):
-    """serve the bokeh-app directory with bokeh server"""
-    Popen(["pyspark", "--port", "4040"])
+    Popen(["sparkUI", "--port", "4040"])
