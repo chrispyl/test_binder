@@ -2,9 +2,9 @@
 
 set -ex
 
-wget https://apache.mirror.wearetriple.com/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
-tar -xzf spark-3.1.2-bin-hadoop3.2.tgz
-rm spark-3.1.2-bin-hadoop3.2.tgz
+#wget https://apache.mirror.wearetriple.com/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
+#tar -xzf spark-3.1.2-bin-hadoop3.2.tgz
+#rm spark-3.1.2-bin-hadoop3.2.tgz
 
 #yes | conda install -c conda-forge jupyterlab=2.1.2
 #pip install jupyterlab-spark-ui-tab
@@ -18,7 +18,7 @@ rm spark-3.1.2-bin-hadoop3.2.tgz
 #mkdir -p ~/.jupyter
 #echo -e $config > ~/.jupyter/jupyter_notebook_config.py
 
-jupyter serverextension enable --sys-prefix sparkUIserverextension
+jupyter serverextension enable --sys-prefix /home/jovyan/sparkUIserverextension
 
 jupyter nbextension install sparkmonitor --py --user
 jupyter nbextension enable  sparkmonitor --py --user
