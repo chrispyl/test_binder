@@ -19,7 +19,7 @@ set -ex
 #echo -e $config > ~/.jupyter/jupyter_notebook_config.py
 
 jupyter serverextension enable --py jupyter_server_proxy
-jupyter labextension install jupyterlab-server-proxy
+#jupyter labextension install jupyterlab-server-proxy
 jupyter serverextension enable --sys-prefix /home/jovyan/sparkUIserverextension
 
 jupyter nbextension install sparkmonitor --py --user
