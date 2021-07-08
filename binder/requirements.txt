@@ -7,4 +7,4 @@ pyspark
 jupyter-server-proxy
 
 sparkmonitor
-jupyter_contrib_nbextensions
+runipy
