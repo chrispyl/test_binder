@@ -23,7 +23,7 @@ jupyter serverextension enable --sys-prefix jupyter_server_proxy
 #jupyter serverextension enable --sys-prefix /home/jovyan/sparkUIserverextension
 
 jupyter contrib nbextension install --user #for inline python in markdown and others
-jupyter nbextension enable python-markdown/main
+jupyter nbextension enable python-markdown/main --js user
 
 jupyter nbextension install sparkmonitor --py --user
 jupyter nbextension enable  sparkmonitor --py --user
