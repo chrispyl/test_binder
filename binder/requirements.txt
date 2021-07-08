@@ -7,4 +7,3 @@ pyspark
 jupyter-server-proxy
 
 sparkmonitor
-selenium
