@@ -19,5 +19,4 @@ tar -xvf hadoop-2.10.1.tar.gz
 
 echo "export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")" >> /etc/profile.d/java_home.sh
 
-
 exec "$@"
