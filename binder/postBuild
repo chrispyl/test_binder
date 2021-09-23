@@ -28,3 +28,4 @@ jupyter serverextension enable --py --user sparkmonitor # this should happen aut
 jupyter lab build --dev-build=False --minimize=False
 
 
+sudo echo "export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")" >> /etc/profile.d/java_home.sh
