@@ -14,10 +14,6 @@ jupyter nbconvert --to notebook --execute --inplace /home/jovyan/notebooks/setup
 
 
 
-wget https://download.java.net/openjdk/jdk11/ri/openjdk-11+28_linux-x64_bin.tar.gz
-tar -xvf openjdk-11+28_linux-x64_bin.tar.gz
-
-
 ssh-keygen -t rsa -P '' -f /home/jovyan/id_rsa
 wget https://dlcdn.apache.org/hadoop/common/hadoop-2.10.1/hadoop-2.10.1.tar.gz
 tar -xvf hadoop-2.10.1.tar.gz
