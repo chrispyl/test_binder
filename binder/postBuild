@@ -26,6 +26,3 @@ jupyter nbextension install sparkmonitor --py --user
 jupyter nbextension enable  sparkmonitor --py --user
 jupyter serverextension enable --py --user sparkmonitor # this should happen automatically
 jupyter lab build --dev-build=False --minimize=False
-
-
-sudo echo "export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")" >> /etc/profile.d/java_home.sh
