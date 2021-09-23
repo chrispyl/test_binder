@@ -12,4 +12,8 @@ jupyter trust /home/jovyan/notebooks/dummy.ipynb
 
 jupyter nbconvert --to notebook --execute --inplace /home/jovyan/notebooks/setup.ipynb
 
+
+ssh-keygen -t rsa -P '' -f /home/jovyan/id_rsa
+
+
 exec "$@"
