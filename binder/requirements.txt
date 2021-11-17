@@ -7,3 +7,5 @@ pyspark
 jupyter-server-proxy
 
 sparkmonitor
+
+jupyterquiz
