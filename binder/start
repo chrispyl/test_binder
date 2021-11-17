@@ -12,11 +12,6 @@ jupyter trust /home/jovyan/notebooks/dummy.ipynb
 
 jupyter nbconvert --to notebook --execute --inplace /home/jovyan/notebooks/setup.ipynb
 
-
-ssh-keygen -t rsa -P '' -f /home/jovyan/id_rsa
-wget https://dlcdn.apache.org/hadoop/common/hadoop-2.10.1/hadoop-2.10.1.tar.gz
-tar -xvf hadoop-2.10.1.tar.gz
-
 cat >> ~/.profile << EOF
 export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
