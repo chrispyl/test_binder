@@ -9,5 +9,3 @@ jupyter-server-proxy
 sparkmonitor
 
 jupyterquiz
-
-jupyter_contrib_nbextensions
