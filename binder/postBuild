@@ -24,5 +24,5 @@ jupyter serverextension enable --sys-prefix jupyter_server_proxy
 
 jupyter nbextension install sparkmonitor --py --user
 jupyter nbextension enable  sparkmonitor --py --user
-jupyter serverextension enable sparkmonitor --py --user # this should happen automatically
+#jupyter serverextension enable --py --user sparkmonitor # this should happen automatically
 jupyter lab build --dev-build=False --minimize=False
