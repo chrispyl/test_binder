@@ -7,15 +7,11 @@ git clone https://github.com/chrispyl/binder_content.git
 mv /home/jovyan/binder_content/datasets /home/jovyan/binder_content/notebooks /home/jovyan/
 rm -rf binder_content
 
-jupyter trust /home/jovyan/notebooks/setup.ipynb
-jupyter trust /home/jovyan/notebooks/dummy.ipynb
+#setup and spark test notebooks
+jupyter trust /home/jovyan/notebooks/*.ipynb
 
 #module 2 notebooks
-jupyter trust /home/jovyan/notebooks/module 2/Introduction to Python.ipynb
-jupyter trust /home/jovyan/notebooks/module 2/map.ipynb
-jupyter trust /home/jovyan/notebooks/module 2/map_reduce.ipynb
-jupyter trust /home/jovyan/notebooks/module 2/pure functions.ipynb
-jupyter trust /home/jovyan/notebooks/module 2/reduce.ipynb
+jupyter trust /home/jovyan/notebooks/module 2/*.ipynb
 
 jupyter nbconvert --to notebook --execute --inplace /home/jovyan/notebooks/setup.ipynb
 
