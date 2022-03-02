@@ -9,3 +9,5 @@ jupyter-server-proxy
 sparkmonitor
 
 jupyterquiz
+
+nptdms
