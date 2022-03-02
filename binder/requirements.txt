@@ -10,4 +10,4 @@ sparkmonitor
 
 jupyterquiz
 
-nptdms
+nptdms==0.21.0
