@@ -2,7 +2,7 @@ pandas
 numpy
 psutil
 
-pyspark==3.1.2
+pyspark==2.4
 
 jupyter-server-proxy
 
