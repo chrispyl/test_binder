@@ -4,18 +4,20 @@ ipython profile create
 echo "c.InteractiveShellApp.extensions.append('sparkmonitor.kernelextension')" >>  $(ipython profile locate default)/ipython_kernel_config.py
 
 git clone https://github.com/chrispyl/binder_content.git
-mv /home/jovyan/binder_content/datasets /home/jovyan/binder_content/notebooks /home/jovyan/
+mv /binder_content/datasets /binder_content/notebooks .
 rm -rf binder_content
 
 #setup and spark test notebooks
-jupyter trust /home/jovyan/notebooks/*.ipynb
+jupyter trust /notebooks/*.ipynb
 
 #module 2 notebooks
-jupyter trust /home/jovyan/notebooks/module 2/*.ipynb
+jupyter trust /notebooks/module 2/*.ipynb
 #module 4 notebooks
-jupyter trust /home/jovyan/notebooks/module 4/*.ipynb
+jupyter trust /notebooks/module 4/*.ipynb
 
-jupyter nbconvert --to notebook --execute --inplace /home/jovyan/notebooks/setup.ipynb
+jupyter nbconvert --to notebook --execute --inplace /notebooks/setup.ipynb
+
+rm /notebooks/setup.ipynb /notebooks/dummy.ipynb 
 
 cat >> ~/.profile << EOF
 export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
