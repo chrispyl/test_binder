@@ -17,7 +17,7 @@ jupyter trust /notebooks/module 4/*.ipynb
 
 jupyter nbconvert --to notebook --execute --inplace /notebooks/setup.ipynb
 
-rm ~/notebooks/setup.ipynb ~/notebooks/dummy.ipynb 
+
 
 cat >> ~/.profile << EOF
 export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
