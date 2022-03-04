@@ -15,7 +15,7 @@ jupyter trust /notebooks/module 2/*.ipynb
 #module 4 notebooks
 jupyter trust /notebooks/module 4/*.ipynb
 
-jupyter nbconvert --to notebook --execute --inplace ~/notebooks/setup.ipynb
+jupyter nbconvert --to notebook --execute --inplace /notebooks/setup.ipynb
 
 rm ~/notebooks/setup.ipynb ~/notebooks/dummy.ipynb 
 
