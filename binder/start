@@ -5,7 +5,7 @@ echo "c.InteractiveShellApp.extensions.append('sparkmonitor.kernelextension')" >
 
 git clone https://github.com/chrispyl/binder_content.git
 mv /binder_content/datasets /binder_content/notebooks .
-rm -rf binder_content
+#rm -rf binder_content
 
 #setup and spark test notebooks
 jupyter trust /notebooks/*.ipynb
