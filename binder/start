@@ -7,13 +7,10 @@ git clone https://github.com/chrispyl/binder_content.git
 mv ~/binder_content/datasets ~/binder_content/notebooks .
 rm -rf binder_content
 
-#setup and spark test notebooks
 jupyter trust ~/notebooks/*.ipynb
-
-#module 2 notebooks
 jupyter trust ~/notebooks/module 2/*.ipynb
-#module 4 notebooks
 jupyter trust ~/notebooks/module 4/*.ipynb
+jupyter trust ~/notebooks/module 5/*.ipynb
 
 jupyter nbconvert --to notebook --execute --inplace ~/notebooks/setup.ipynb
 
