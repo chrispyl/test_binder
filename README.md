@@ -12,5 +12,8 @@
 * [Reduce](https://mybinder.org/v2/gh/chrispyl/test_binder/main?filepath=notebooks/module%202/reduce.ipynb)  
 
 [Module 4](https://mybinder.org/v2/gh/chrispyl/test_binder/main?filepath=notebooks/module%204):  
+* [Introduction to Apache Spark](https://mybinder.org/v2/gh/chrispyl/test_binder/main?filepath=notebooks/module%204/Introduction%20to%20Apache%20Spark.ipynb)  
 * [Dataframes](https://mybinder.org/v2/gh/chrispyl/test_binder/main?filepath=notebooks/module%204/Dataframes.ipynb)  
-* [Datalakes](https://mybinder.org/v2/gh/chrispyl/test_binder/main?filepath=notebooks/module%204/Datalakes.ipynb)  
+
+[Module 5](https://mybinder.org/v2/gh/chrispyl/test_binder/main?filepath=notebooks/module%205):  
+* [ETL](https://mybinder.org/v2/gh/chrispyl/test_binder/main?filepath=notebooks/module%205/ETL.ipynb)  
